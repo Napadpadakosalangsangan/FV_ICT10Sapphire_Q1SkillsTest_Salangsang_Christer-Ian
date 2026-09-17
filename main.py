@@ -2,6 +2,7 @@ from pyscript import document, display
 
 def order(e):
 
+# How do I let my pyscript know if it's checked or not T-T
   burger_ordered = float(document.getElementById("burger").value)
   fries_ordered = float(document.getElementById("fries").value)
   soda_ordered = float(document.getElementById("soda").value)
