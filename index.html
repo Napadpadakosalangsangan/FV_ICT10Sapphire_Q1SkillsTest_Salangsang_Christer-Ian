@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Test</title>
+
+  <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+
+</head>
+<body>
+
+<h1>McArthur's Fast Food Restaurant</h1>
+
+<div class="container">
+  <h2>McMenu : </h2>
+
+  <label>
+    <input type="checkbox" id="burger" value="5">
+    <span>Burger - $5.00</span>
+  </label><br>
+
+  <label>
+    <input type="checkbox" id="fries" value="3">
+    <span>Fries - $3.00</span>
+  </label><br>
+
+  <label>
+    <input type="checkbox" id="soda" value="1">
+    <span>Soda - $1.00</span>
+  </label>
+</div>
+
+<button type="button" py-click="order">Order</button>
+
+<div>
+  <div>===== RECEIPT =====</div>
+  <div>Subtotal: 
+    <span id="subtotal">$0.00</span>
+  </div>
+
+  <div>VAT: 
+    <span id="vat">$0.00</span>
+  </div>
+
+  <div>Total:
+    <span id="total">$0.00</span>
+  </div>
+</div>
+<script type="py" src="main.py"></script>
+
+</body>
+</html>
