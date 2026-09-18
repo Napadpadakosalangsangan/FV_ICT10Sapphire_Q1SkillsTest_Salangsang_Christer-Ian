@@ -2,12 +2,16 @@ from pyscript import document, display
 
 def order(e):
 
-# How do I let my pyscript know if it's checked or not T-T
-  burger_ordered = float(document.getElementById("burger").value)
-  fries_ordered = float(document.getElementById("fries").value)
-  soda_ordered = float(document.getElementById("soda").value)
+  burger = 5
+  fries = 3
+  soda = 1
 
-  subtotal = float(burger_ordered + fries_ordered + soda_ordered)
+# How do I let my pyscript know if it's checked or not T-T
+  burger_ordered = float(document.getElementById("burger").checked)
+  fries_ordered = float(document.getElementById("fries").checked)
+  soda_ordered = float(document.getElementById("soda").checked)
+
+  subtotal = float(burger * burger_ordered + fries * fries_ordered + soda * soda_ordered)
 
   vat = subtotal * 0.12
 
