@@ -13,15 +13,19 @@ def order(e):
   soda_ordered = float(document.getElementById("soda").checked)
 
 # Calculating (w/ Booleans returning 1s and 0s)
-  subtotal = float(burger * burger_ordered + fries * fries_ordered + soda * soda_ordered)
+  subtotal = float(
+    burger * burger_ordered + 
+    fries * fries_ordered + 
+    soda * soda_ordered
+)
 
-# 12% vat
-  vat = subtotal * 0.12
+# 12% VAT
+  VAT = subtotal * 0.12
 
-# After vat
+# After VAT
   total = subtotal + vat
 
 #  Displaying the receipt
   document.getElementById("subtotal").innerText = f"${subtotal}"
-  document.getElementById("vat").innerText = f"${vat}"
+  document.getElementById("vat").innerText = f"${VAT}"
   document.getElementById("total").innerText = f"${total}"
